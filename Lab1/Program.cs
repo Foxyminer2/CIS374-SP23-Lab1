@@ -42,7 +42,18 @@ namespace Lab1
                 IKeyValueMap<TKey,TValue> keyValueMap,
                 List<KeyValuePair<TKey, TValue>> keyValuePairs )
         {
-            
+            Stopwatch stopwatch = new Stopwatch();
+
+            stopwatch.Start();
+
+            foreach(var kvp in keyValuePairs)
+            {
+                keyValueMap.Add(kvp.Key, kvp.Value);
+            }
+
+            stopwatch.Stop();
+            Console.WriteLine(stopwatch.Elapsed.TotalSeconds);
+
 
         }
 
