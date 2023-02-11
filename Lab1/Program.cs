@@ -9,7 +9,7 @@ namespace Lab1
     {
         static void Main(string[] args)
         {
-            int MAX = 10000;
+            int MAX = 100000;
 
             for (int c = 0; c < 10; c++)
             {
@@ -20,19 +20,20 @@ namespace Lab1
                     intKeyValuePairs.Add(new KeyValuePair<int, int>(i, i + 42));
                 }
 
-                //var dictionaryKeyValueMap = new DictionaryKeyValueMap<int, int>();
-                var bstKeyValueMap = new BinarySearchTreeKeyValueMap<int, int>();
+                var dictionaryKeyValueMap = new DictionaryKeyValueMap<int, int>();
+                //var bstKeyValueMap = new BinarySearchTreeKeyValueMap<int, int>();
 
-                //Console.WriteLine("DictionaryKeyValueMap");
-                Console.WriteLine("BSTKeyValueMap");
+                Console.WriteLine("DictionaryKeyValueMap");
+                // Console.WriteLine("BSTKeyValueMap");
                 Console.WriteLine("Ordered");
-                CreateKeyValueMap<int, int>(bstKeyValueMap, intKeyValuePairs);
+                CreateKeyValueMap<int, int>(dictionaryKeyValueMap, intKeyValuePairs);
 
                 Console.WriteLine("Unordered");
                 intKeyValuePairs.Shuffle();
-                bstKeyValueMap = new BinarySearchTreeKeyValueMap<int, int>();
-
-                CreateKeyValueMap<int, int>(bstKeyValueMap, intKeyValuePairs);
+                dictionaryKeyValueMap = new DictionaryKeyValueMap<int, int>();
+                CreateKeyValueMap<int, int>(dictionaryKeyValueMap, intKeyValuePairs);
+                //bstKeyValueMap = new BinarySearchTreeKeyValueMap<int, int>();
+                //CreateKeyValueMap<int, int>(bstKeyValueMap, intKeyValuePairs);
             }
 
         }
@@ -58,6 +59,7 @@ namespace Lab1
         }
 
 
+        //TODO
         public static void QueryKeyValueMap<TKey, TValue>(
                 IKeyValueMap<TKey, TValue> keyValueMap,
                 List<KeyValuePair<TKey, TValue>> keyValuePairs)
@@ -65,6 +67,7 @@ namespace Lab1
            
         }
 
+        //TODO
         public static void RemoveKeyValueMap<TKey, TValue>(
                 IKeyValueMap<TKey, TValue> keyValueMap,
                 List<KeyValuePair<TKey, TValue>> keyValuePairs)
