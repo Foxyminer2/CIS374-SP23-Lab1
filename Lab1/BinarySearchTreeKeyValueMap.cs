@@ -7,23 +7,25 @@ namespace Lab1
     {
         private BinarySearchTreeMap<TKey, TValue> binarySearchTreeMap = new BinarySearchTreeMap<TKey, TValue>();
 
-        public int Height => throw new System.NotImplementedException();
+        public int Height => binarySearchTreeMap.Height;
 
-        public int Count => throw new System.NotImplementedException();
+        public int Count => binarySearchTreeMap.Count;
 
         public void Add(TKey key, TValue value)
         {
-            throw new System.NotImplementedException();
+            binarySearchTreeMap.Add(key, value);
         }
 
         public KeyValuePair<TKey, TValue> Get(TKey key)
         {
-            throw new System.NotImplementedException();
+            TValue value;
+            binarySearchTreeMap.TryGetValue(key, out value);
+            return new KeyValuePair<TKey, TValue>(key, value);
         }
 
         public bool Remove(TKey key)
         {
-            throw new System.NotImplementedException();
+            return binarySearchTreeMap.Remove(key);
         }
     }
 }
