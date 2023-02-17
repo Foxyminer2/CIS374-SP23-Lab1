@@ -10,27 +10,27 @@ namespace Lab1
         {
         }
 
-        private RedBlackTreeMap<TKey, TValue> RedBlackTreeMap = new RedBlackTreeMap<TKey, TValue>();
+        private RedBlackTreeMap<TKey, TValue> redBlackTreeMap = new RedBlackTreeMap<TKey, TValue>();
 
-        public int Height => RedBlackTreeMap.Height;
+        public int Height => redBlackTreeMap.Height;
 
-        public int Count => RedBlackTreeMap.Count;
+        public int Count => redBlackTreeMap.Count;
 
         public void Add(TKey key, TValue value)
         {
-            RedBlackTreeMap.Add(key, value);
+            redBlackTreeMap.Add(key, value);
         }
 
         public KeyValuePair<TKey, TValue> Get(TKey key)
         {
             TValue value;
-            RedBlackTreeMap.TryGetValue(key, out value);
+            redBlackTreeMap.TryGetValue(key, out value);
             return new KeyValuePair<TKey, TValue>(key, value);
         }
 
         public bool Remove(TKey key)
         {
-            return RedBlackTreeMap.Remove(key);
+            return redBlackTreeMap.Remove(key);
         }
     }
 }

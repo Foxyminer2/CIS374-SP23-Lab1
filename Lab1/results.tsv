@@ -1,0 +1,43 @@
+/Users/aapple21/Documents/GitHub/CIS273-FA22-Lab0/cis277-fa22-Lab2/CIS277-FA22-Machine-Learning/cis374-sp23-Lab0/Lab0/CIS374-SP23-Lab1/Lab1/DSA/AVLTreeMap.cs(23,20): warning CS0108: 'AVLTreeMap<TKey, TValue>.Height' hides inherited member 'BinarySearchTreeMap<TKey, TValue>.Height'. Use the new keyword if hiding was intended. [/Users/aapple21/Documents/GitHub/CIS273-FA22-Lab0/cis277-fa22-Lab2/CIS277-FA22-Machine-Learning/cis374-sp23-Lab0/Lab0/CIS374-SP23-Lab1/Lab1/Lab1.csproj]
+/Users/aapple21/Documents/GitHub/CIS273-FA22-Lab0/cis277-fa22-Lab2/CIS277-FA22-Machine-Learning/cis374-sp23-Lab0/Lab0/CIS374-SP23-Lab1/Lab1/DSA/RedBlackTreeMap.cs(29,20): warning CS0108: 'RedBlackTreeMap<TKey, TValue>.Height' hides inherited member 'BinarySearchTreeMap<TKey, TValue>.Height'. Use the new keyword if hiding was intended. [/Users/aapple21/Documents/GitHub/CIS273-FA22-Lab0/cis277-fa22-Lab2/CIS277-FA22-Machine-Learning/cis374-sp23-Lab0/Lab0/CIS374-SP23-Lab1/Lab1/Lab1.csproj]
+AVL Tree
+Ordered	0.1189459
+Unordered	0.1714199
+Remove AVLTREE	0.1273449
+Get AVLTree	0.001466
+Ordered	0.1184218
+Unordered	0.1275262
+Remove AVLTREE	0.1199442
+Get AVLTree	0.0013227
+Ordered	0.1165542
+Unordered	0.1255567
+Remove AVLTREE	0.1192332
+Get AVLTree	0.0012991
+Ordered	0.1182903
+Unordered	0.1241907
+Remove AVLTREE	0.1193548
+Get AVLTree	0.0012682
+Ordered	0.1137982
+Unordered	0.1302743
+Remove AVLTREE	0.1213395
+Get AVLTree	0.0012615
+Ordered	0.1156481
+Unordered	0.1242615
+Remove AVLTREE	0.1175324
+Get AVLTree	0.0012685
+Ordered	0.1163005
+Unordered	0.125119
+Remove AVLTREE	0.1186203
+Get AVLTree	0.0012639
+Ordered	0.1160395
+Unordered	0.1264885
+Remove AVLTREE	0.1191764
+Get AVLTree	0.0013097
+Ordered	0.1171105
+Unordered	0.1230768
+Remove AVLTREE	0.1192964
+Get AVLTree	0.0012677
+Ordered	0.1140045
+Unordered	0.124925
+Remove AVLTREE	0.1185789
+Get AVLTree	0.0013403

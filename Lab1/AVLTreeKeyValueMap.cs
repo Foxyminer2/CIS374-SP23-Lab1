@@ -10,27 +10,27 @@ namespace Lab1
         {
         }
 
-        private AVLTreeMap<TKey, TValue> AVLTreeMap = new AVLTreeMap<TKey, TValue>();
+        private AVLTreeMap<TKey, TValue> avlTreeMap = new AVLTreeMap<TKey, TValue>();
 
-        public int Height => AVLTreeMap.Height;
+        public int Height => avlTreeMap.Height;
 
-        public int Count => AVLTreeMap.Count;
+        public int Count => avlTreeMap.Count;
 
         public void Add(TKey key, TValue value)
         {
-            AVLTreeMap.Add(key, value);
+            avlTreeMap.Add(key, value);
         }
 
         public KeyValuePair<TKey, TValue> Get(TKey key)
         {
             TValue value;
-            AVLTreeMap.TryGetValue(key, out value);
+            avlTreeMap.TryGetValue(key, out value);
             return new KeyValuePair<TKey, TValue>(key, value);
         }
 
         public bool Remove(TKey key)
         {
-            return AVLTreeMap.Remove(key);
+            return avlTreeMap.Remove(key);
         }
     }
 }
